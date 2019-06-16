@@ -1,5 +1,16 @@
 #from PIL import pillow
 
+############ EXTEND AND STRIP ############
+#strip might not work on lists? 
+#used re.sub instead
+    # raw_map_split = raw_map_data.split()
+    # raw_map_strip = raw_map_data.strip()
+    # map_data_clean_.extend(raw_map_split, raw_map_strip)
+
+#why the Fuck is this not valid?
+#max_of_map_data = max(map_data_as_int)
+
+    
 ############ NUMPY EXPERIMENT ############
 #ended with an array inside of a list
 #would've greatly inconvieniced me later on in the project
