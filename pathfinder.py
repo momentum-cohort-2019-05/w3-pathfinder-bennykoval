@@ -27,7 +27,7 @@ def draw_map(low_moan):
     for line in low_moan:
         x = 0
         for elevation in line:
-            not_empty_map.point((x,y,),fill=(elevation, elevation, elevation))
+            not_empty_map.point((x,y,),fill=(elevation))
             x += 1
         y += 1 
     empty_map.show()
