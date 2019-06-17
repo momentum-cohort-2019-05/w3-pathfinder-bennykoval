@@ -36,6 +36,21 @@
 #print(test)
 #print(map_data_list.index(4068))
 
+######################
+
+
+# def draw_map(map_data_as_int_list):
+#     empty_map = Image.new(mode="RGB", size=(img_width, img_height))
+#     not_empty_map = ImageDraw.Draw(empty_map)
+#     a = 0
+#     for y in range(600):
+#         b = 0
+#         breakpoint()
+#         for x in range(600): 
+#             not_empty_map.point((a,b),fill=(map_data_as_int_list[x + 600 * y]),)
+#             b += 1
+#         a += 1    
+#     empty_map.show()
 
 
 ############ FOR LOOP TO OBTAIN MAX/MIN VALUES ############
