@@ -21,7 +21,7 @@ def list_of_lists(map_as_int_list):
 
 def draw_map(low_moan):
     empty_map = Image.new(mode="L", size=(img_width, img_height))
-    empty_map.save('mappy_map.png')
+    empty_map.save("mappy_map.png")
     not_empty_map = ImageDraw.Draw(empty_map)
     y = 0 
     for line in low_moan:
@@ -31,45 +31,7 @@ def draw_map(low_moan):
             x += 1
         y += 1 
     empty_map.show()
-
-
-# blank_map = Image.new('RGBA', (600, 600), 'white')
-# blank_map.save('test_map.png')
-# draw_test = ImageDraw.Draw(blank_map)
-
-#y, then x 
-#return self.map_data_as_int[y][x]
-#to get intensiy for each elevation, subtract minimum elevation from current elevation, divide that by the range, and you've got it!
-
-# class ElevationMap:
-#     """
-#     ElevationMap is a class that takes a matrix (list of lists, 2D)
-#     of integers and can be used to generate an image of those map_data_as_int
-#     like a standard elevation map.
-#     """
-
-#     def __init__(self, map_data_as_int):
-#         self.map_data_as_int = map_data_as_int
-
-#     def elevation_at_coordinate(self, x, y):
-#         return self.map_data_as_int[y][x]
-
-#     def min_elevation(self):
-#         return min([min(row) for row in self.map_data_as_int])
-
-#     def max_elevation(self):
-#         return max([max(row) for row in self.map_data_as_int])
-
-#     def intensity_at_coordinate(self, x, y):
-#         """Given an x, y coordinate, return the
-#         intensity level (used for grayscale in image) of
-#         the elevation at that coordinate.
-#         """
-#         elevation = self.elevation_at_coordinate(x, y)
-#         min_elevation = self.min_elevation()
-#         max_elevation = self.max_elevation()
-
-#         return (elevation - min_elevation) / (max_elevation - min_elevation)
+    not_empty_map.show()
 
 
 if __name__ == "__main__":
@@ -78,7 +40,7 @@ if __name__ == "__main__":
     #print(range_elevation)
     middle_moan = list_of_lists(cheap_sunglasses_indoors)
     #print(len(middle_moan[0]))
-    # draw_map_from_ints(middle_moan)
+    draw_map(middle_moan)
     # print(middle_moan)
     # print(min_of_map_data)
     # print(range_of_map_data)
